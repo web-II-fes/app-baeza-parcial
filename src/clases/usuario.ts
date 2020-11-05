@@ -1,9 +1,9 @@
-export interface Usuario{
+export interface Pedido{
 
     nombre: String,
-    carrera:String,
-    anio:Number,
-    estado:String
+    direccion:String,
+    pedido:String,
+    fecha:Date
 
 
 }

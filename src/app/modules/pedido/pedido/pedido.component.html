@@ -1,0 +1,43 @@
+<form [formGroup]='pedidoForm'>
+    <h1>Formulario de Pedido</h1>
+    <div class="datosPedido" >
+
+        <mat-form-field appearance="outline">
+            <mat-label>Nombre Cliente</mat-label>
+                <input matInput type="text" formControlName="nombre">          
+        </mat-form-field>
+        
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Direccion</mat-label>
+                <input matInput type="text" formControlName="direccion">          
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Pedido</mat-label>
+                <input matInput type="text" formControlName="pedido">
+        </mat-form-field>
+        <br>
+
+         <br>
+         <mat-form-field appearance="fill">
+            <mat-label>Fecha pedido</mat-label>
+            <input matInput [matDatepicker]="fecha" formControlName="fecha">
+            <mat-datepicker-toggle matSuffix [for]="fecha"></mat-datepicker-toggle>
+            <mat-datepicker #fecha></mat-datepicker>
+          </mat-form-field>
+
+        <!-- <mat-form-field appearance="outline">
+            <mat-label>Fecha Entrega</mat-label>
+
+                <input matInput type="Date" formControlName="fecha">           -->
+        <!-- </mat-form-field>
+        <br> -->
+    
+
+        <button mat-raised-button (click)="cargarPedido()">Guardar</button>
+        <!-- <button mat-raised-button color="primary">Guardar</button> -->
+    </div>
+    
+</form>
+  

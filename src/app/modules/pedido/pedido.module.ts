@@ -1,5 +1,5 @@
 
-import { CursoRoutingModule } from'./curso.routing.module';
+import { PedidoRoutingModule } from'./pedido.routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
@@ -12,8 +12,8 @@ import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
     declarations: [  ],
-    imports: [ ReactiveFormsModule, HttpClientModule, CommonModule, CursoRoutingModule,
+    imports: [ ReactiveFormsModule, HttpClientModule, CommonModule, PedidoRoutingModule,
     MatFormFieldModule, MatInputModule ],
     providers: [],
   })
-  export class CursoModule { }
+  export class PedidoModule { }

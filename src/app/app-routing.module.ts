@@ -3,9 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'curso',
+    path: 'pedido',
     
-    loadChildren: () => import('./modules/curso/curso.module').then((m) => m.CursoModule)
+    loadChildren: () => import('./modules/pedido/pedido.module').then((m) => m.PedidoModule)
   },
 ];
 
